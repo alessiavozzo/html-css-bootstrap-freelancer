@@ -17,7 +17,7 @@
 
   <!-- debug section -->
   <style>
-    .debug .navbar {
+    /* .debug .navbar {
       height: 100px;
       border: 1px solid black;
     }
@@ -30,7 +30,7 @@
       & .row>* {
         padding: 1rem 0;
       }
-    }
+    } */
 
     .debug #portfolio {
       height: 1000px;
@@ -71,7 +71,7 @@
 
   <!-- /#site_header -->
   <header id="site_header">
-    <nav class="navbar navbar-expand-md bg-secondary">
+    <nav class="navbar navbar-expand-md bg-secondary p-3">
       <div class="container">
 
         <!-- logo -->
@@ -97,7 +97,7 @@
           </ul>
 
         </div>
-        
+
       </div>
 
     </nav>
@@ -109,37 +109,38 @@
   <main id="site_main">
 
     <!-- /#jumbotron -->
-    <section id="jumbotron">
+    <section id="jumbotron" class="bg-success">
       <div class="container">
         <div class="row text-center">
 
           <!-- img -->
 
-          <div class="col-12">
-            <img src="" alt="img">
+          <div class="col-4 m-auto py-3">
+            <img src="./assets/img/avatar.svg" alt="img" class="img-fluid">
           </div>
 
           <!-- title+star -->
-          <h1>titolone</h1>
+          <h1 class="text-white text-uppercase fs-1 fw-bold">Start bootstrap</h1>
 
-          <div class="star-icon">
+          <div class="star-icon fs-1 text-white py-3">
+            <i class="fa-solid fa-grip-lines"></i>
             <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-grip-lines"></i>
           </div>
 
           <!-- links -->
-          <div class="links">
+          <div class="links py-3">
             <ul class="d-flex list-inline justify-content-center">
-              <li class="px-5">
-                <a href="#">link</a>
+              <li class="px-1 text-uppercase">
+                <a href="#" class="text-white text-decoration-none">Graphic artist -</a>
               </li>
-              <li class="px-5">
-                <a href="#">link</a>
+              <li class="px-1 text-uppercase">
+                <a href="#" class="text-white text-decoration-none">Web designer -</a>
               </li>
-              <li class="px-5">
-                <a href="#">link</a>
+              <li class="px-1 text-uppercase">
+                <a href="#" class="text-white text-decoration-none">illustrator</a>
               </li>
+              
             </ul>
           </div>
 
