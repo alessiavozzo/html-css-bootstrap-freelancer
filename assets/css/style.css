@@ -76,8 +76,15 @@ button.btn.btn-primary{
     background-color: var(--fr-primary);
 }
 
+.fa-star{    
+    transition: all 5s;
+}
 
 .star-icon:has(.fa-star:hover){
+
+    & .fa-star{
+        transform: rotate(360deg);
+    }
 
     &::before{
         width: 50%;
@@ -97,10 +104,22 @@ button.btn.btn-primary{
     display: none;
     
     > .fa-plus{
-        font-size: 2.5rem;
+        font-size: 2rem;
+        transition: all 0.5s;
+
+        &:hover{
+            transform: scale(1.8);
+        }
     }
 }
 
-.image:hover .overlay{
-    display: flex;
+.image:hover{
+    
+    & img{
+        box-shadow: 0 0 7px 1px black;
+    }
+    & .overlay{
+        display: flex;
+        cursor: pointer;     
+    }
 }
