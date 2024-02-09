@@ -55,11 +55,11 @@
       border: 1px solid black;
     } */
 
-    .debug #site_footer {
+    /* .debug #site_footer {
       height: 400px;
       background-color: lightgoldenrodyellow;
       border: 1px solid black;
-    }
+    } */
   </style>
 
 </head>
@@ -263,7 +263,8 @@
             <input type="text" placeholder="Name" class="form-control border-0 mb-2 border-bottom rounded-0">
             <input type="email" placeholder="Email Address" class="form-control border-0 mb-2 border-bottom rounded-0">
             <input type="number" placeholder="Phone Number" class="form-control border-0 mb-2 border-bottom rounded-0">
-            <input type="textarea" style="height: 150px;" placeholder="Message" class="form-control border-0 mb-2 border-bottom rounded-0">
+            <input type="textarea" style="height: 150px;" placeholder="Message"
+              class="form-control border-0 mb-2 border-bottom rounded-0">
             <button type="submit" class="btn btn-primary mt-3 bg-success border-0 d-block">Send</button>
 
           </form>
@@ -281,24 +282,47 @@
   <footer id="site_footer">
 
     <!-- top -->
-    <div class="top-footer">
+    <div class="top-footer bg-secondary pt-5 pb-3">
       <div class="container">
-        <div class="row row-cols-1 row-cols-md-3 text-center">
+        <div class="row row-cols-1 row-cols-md-3 gap-4 gap-md-0 text-center text-white px-4">
 
           <!-- location -->
           <div class="location">
             <h5>LOCATION</h5>
-            <span>testo</span>
+            <span>2215 John Daniel Drive Clark, MO 54243</span>
           </div>
 
           <div class="social">
-            <h5>titolino</h5>
-            <span>iconevarie</span>
+            <h5>AROUND THE WEB</h5>
+            <div class="icons d-flex align-items-center justify-content-center">
+
+              <a href="#" class="text-white text-decoration-none m-2 border rounded-circle p-1">
+                <i class="fa-brands fa-facebook-f px-2"></i>
+              </a>
+              
+              <a href="#" class="text-white text-decoration-none m-2 border rounded-circle p-1">
+                <i class="fa-brands fa-google-plus-g px-1"></i>
+              </a>
+
+              <a href="#" class="text-white text-decoration-none m-2 border rounded-circle p-1">
+                <i class="fa-brands fa-twitter px-1"></i>
+              </a>
+
+              <a href="#" class="text-white text-decoration-none m-2 border rounded-circle p-1">
+                <i class="fa-brands fa-linkedin-in px-1"></i>
+              </a>
+              
+
+            </div>
+
           </div>
 
           <div class="about-freelancer">
-            <h5>titolino</h5>
-            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, optio!</span>
+            <h5>ABOUT FREELANCER</h5>
+            <p>
+              Freelancer is a free to use, open source Bootstrap theme created by
+              <span class="text-success">Start Bootstrap</span>.
+            </p>
           </div>
 
         </div>
@@ -306,9 +330,9 @@
     </div>
 
     <!-- bottom -->
-    <div class="bottom-footer py-5">
-      <div class="container text-center">
-        <span>Copyright</span>
+    <div class="bottom-footer py-5 bg-dark">
+      <div class="container text-center text-white">
+        <span>Copyright © Your Website 2019</span>
       </div>
     </div>
   </footer>
