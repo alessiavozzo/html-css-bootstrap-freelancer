@@ -15,8 +15,10 @@
 
 
 
-  <!-- debug section -->
-  <style>
+    
+    <style>
+
+      /* debug section */
     /* .debug .navbar {
       height: 100px;
       border: 1px solid black;
@@ -60,6 +62,41 @@
       background-color: lightgoldenrodyellow;
       border: 1px solid black;
     } */
+
+
+    /* color palette */
+
+    :root{
+      --fr-primary: rgba(26, 188, 156, 1);
+      --fr-dark: rgba(58, 84, 109, 1); 
+      --fr-darker: rgba(44, 62, 80, 1);
+    }
+
+    /* utility bg-color */
+    
+    .bg_primary{
+      background-color: var(--fr-primary);
+    }
+
+    .bg_darker{
+      background-color: var(--fr-darker);
+    }
+
+    .bg_dark{
+      background-color: var(--fr-dark);
+    }
+
+    /* utility color text/btn */
+
+    .text_primary{
+      color: var(--fr-primary);
+    }
+
+    .btn_primary{
+      background-color: var(--fr-primary);
+    }
+
+
   </style>
 
 </head>
@@ -68,7 +105,7 @@
 
   <!-- /#site_header -->
   <header id="site_header">
-    <nav class="navbar navbar-expand-md bg-secondary p-3">
+    <nav class="navbar navbar-expand-md bg_darker p-3">
       <div class="container">
 
         <!-- logo -->
@@ -108,7 +145,7 @@
   <main id="site_main">
 
     <!-- /#jumbotron -->
-    <section id="jumbotron" class="bg-success">
+    <section id="jumbotron" class="bg_primary">
       <div class="container">
         <div class="row text-center">
 
@@ -206,7 +243,7 @@
 
 
     <!-- /#about -->
-    <section id="about" class="bg-success py-4 text-white">
+    <section id="about" class="bg_primary py-4 text-white">
       <div class="container">
         <div class="row">
 
@@ -266,7 +303,7 @@
             <input type="email" placeholder="Email Address" class="form-control border-0 mb-2 border-bottom rounded-0">
             <input type="number" placeholder="Phone Number" class="form-control border-0 mb-2 border-bottom rounded-0">
             <textarea name=""cols="30" rows="6" class="form-control border-0 mb-2 border-bottom rounded-0" placeholder="Message"></textarea>
-            <button type="submit" class="btn btn-success mt-3 border-0 d-block">Send</button>
+            <button type="submit" class="btn btn_primary text-white mt-3 border-0 d-block">Send</button>
 
           </form>
         </div>
@@ -283,7 +320,7 @@
   <footer id="site_footer">
 
     <!-- top -->
-    <div class="top-footer bg-secondary pt-5 pb-3">
+    <div class="top-footer bg_dark pt-5 pb-3">
       <div class="container">
         <div class="row row-cols-1 row-cols-md-3 gap-5 gap-md-0 text-center text-white">
 
@@ -322,7 +359,7 @@
             <h5>ABOUT FREELANCER</h5>
             <p>
               Freelancer is a free to use, open source Bootstrap theme created by
-              <span class="text-success">Start Bootstrap</span>.
+              <span class="text_primary">Start Bootstrap</span>.
             </p>
           </div>
 
@@ -331,7 +368,7 @@
     </div>
 
     <!-- bottom -->
-    <div class="bottom-footer py-5 bg-dark">
+    <div class="bottom-footer py-5 bg_darker">
       <div class="container text-center text-white">
         <span>Copyright © Your Website 2019</span>
       </div>
