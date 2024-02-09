@@ -27,11 +27,14 @@
     color: var(--fr-primary);
 }
 
-.btn_primary{
+button.btn.btn-primary{
     background-color: var(--fr-primary);
 }
 
 /* #endregion utility bg-text-btn color */
+
+/* #region star+social style */
+
 
 .star-icon::before, .star-icon::after{
     content: '';
@@ -47,4 +50,19 @@
     width: 1.5rem;
     height: 1.5rem;
     padding: 1.2rem;
+}
+
+/* #endregion star+social style */
+
+/* #region hovers */
+
+.btn:has(.fa-download):hover{
+    
+    > span{
+    color: var(--fr-dark);
+    }
+
+    > i{
+    color: var(--fr-dark);
+    }
 }
