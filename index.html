@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bootstrap - Freelancer</title>
 
+  <link rel="stylesheet" href="./assets/css/style.css">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -63,40 +65,6 @@
       border: 1px solid black;
     } */
 
-
-    /* color palette */
-
-    :root{
-      --fr-primary: rgba(26, 188, 156, 1);
-      --fr-dark: rgba(58, 84, 109, 1); 
-      --fr-darker: rgba(44, 62, 80, 1);
-    }
-
-    /* utility bg-color */
-    
-    .bg_primary{
-      background-color: var(--fr-primary);
-    }
-
-    .bg_darker{
-      background-color: var(--fr-darker);
-    }
-
-    .bg_dark{
-      background-color: var(--fr-dark);
-    }
-
-    /* utility color text/btn */
-
-    .text_primary{
-      color: var(--fr-primary);
-    }
-
-    .btn_primary{
-      background-color: var(--fr-primary);
-    }
-
-
   </style>
 
 </head>
@@ -147,7 +115,7 @@
     <!-- /#jumbotron -->
     <section id="jumbotron" class="bg_primary">
       <div class="container">
-        <div class="row text-center">
+        <div class="row text-center text-white">
 
           <!-- img -->
 
@@ -156,12 +124,10 @@
           </div>
 
           <!-- title+star -->
-          <h1 class="col-12 text-white text-uppercase fs-1 fw-bold">Start bootstrap</h1>
+          <h1 class="col-12 text-uppercase fs-1 fw-bold">Start bootstrap</h1>
 
-          <div class="col-12 star-icon fs-1 text-white py-3">
-            <i class="fa-solid fa-grip-lines"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-grip-lines"></i>
+          <div class="col-12 star-icon fs-1 d-flex justify-content-center align-items-center gap-2">            
+            <i class="fa-solid fa-star"></i>            
           </div>
 
           <!-- links -->
@@ -197,10 +163,8 @@
           <!-- title+star -->
           <h2 class="col-12 text-uppercase">Portfolio</h2>
 
-          <div class="col-12 star-icon py-3 fs-1">
-            <i class="fa-solid fa-grip-lines"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-grip-lines"></i>
+          <div class="col-12 star-icon fs-1 d-flex justify-content-center align-items-center gap-2">            
+            <i class="fa-solid fa-star"></i>            
           </div>
 
           <!-- cards -->
@@ -249,12 +213,8 @@
 
           <!-- title+star -->
           <h2 class="col-12 text-center text-uppercase">About</h2>
-          <div class="col-12 star-icon text-center">
-            <div class="star-icon fs-1 py-2">
-              <i class="fa-solid fa-grip-lines"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-grip-lines"></i>
-            </div>
+          <div class="col-12 star-icon fs-1 d-flex justify-content-center align-items-center gap-2 mb-3">            
+            <i class="fa-solid fa-star"></i>            
           </div>
 
           <div class="col-10 text d-flex flex-wrap justify-content-center gap-3 m-auto">
@@ -291,10 +251,8 @@
 
           <!-- title+star -->
           <h2 class="col-12 text-uppercase">Contact me</h2>
-          <div class="col-12 star-icon fs-1">
-            <i class="fa-solid fa-grip-lines"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-grip-lines"></i>
+          <div class="col-12 star-icon fs-1 d-flex justify-content-center align-items-center gap-2">            
+            <i class="fa-solid fa-star"></i>            
           </div>
 
           <!-- form -->
@@ -334,20 +292,20 @@
             <h5>AROUND THE WEB</h5>
             <div class="icons d-flex align-items-center justify-content-center">
 
-              <a href="#" class="text-white text-decoration-none m-2 border rounded-circle p-1">
-                <i class="fa-brands fa-facebook-f px-2"></i>
+              <a href="#" class="text-white text-decoration-none m-2 border rounded-circle">
+                <i class="fa-brands fa-facebook-f"></i>
               </a>
               
-              <a href="#" class="text-white text-decoration-none m-2 border rounded-circle p-1">
-                <i class="fa-brands fa-google-plus-g px-1"></i>
+              <a href="#" class="text-white text-decoration-none m-2 border rounded-circle">
+                <i class="fa-brands fa-google-plus-g"></i>
               </a>
 
-              <a href="#" class="text-white text-decoration-none m-2 border rounded-circle p-1">
-                <i class="fa-brands fa-twitter px-1"></i>
+              <a href="#" class="text-white text-decoration-none m-2 border rounded-circle">
+                <i class="fa-brands fa-twitter"></i>
               </a>
 
-              <a href="#" class="text-white text-decoration-none m-2 border rounded-circle p-1">
-                <i class="fa-brands fa-linkedin-in px-1"></i>
+              <a href="#" class="text-white text-decoration-none m-2 border rounded-circle">
+                <i class="fa-brands fa-linkedin-in"></i>
               </a>
               
 
@@ -370,7 +328,7 @@
     <!-- bottom -->
     <div class="bottom-footer py-5 bg_darker">
       <div class="container text-center text-white">
-        <span>Copyright © Your Website 2019</span>
+        <span>Copyright © Your Website 2024</span>
       </div>
     </div>
   </footer>

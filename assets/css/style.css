@@ -1,0 +1,46 @@
+
+/* #region color palette */
+
+:root{
+    --fr-primary: rgba(26, 188, 156, 1);
+    --fr-dark: rgba(58, 84, 109, 1); 
+    --fr-darker: rgba(44, 62, 80, 1);
+}
+
+/*#endregion color palette */
+
+/* #region utility bg-text-btn color */
+  
+.bg_primary{
+    background-color: var(--fr-primary);
+}
+
+.bg_darker{
+    background-color: var(--fr-darker);
+}
+
+.bg_dark{
+    background-color: var(--fr-dark);
+}
+
+.text_primary{
+    color: var(--fr-primary);
+}
+
+.btn_primary{
+    background-color: var(--fr-primary);
+}
+
+/* #endregion utility bg-text-btn color */
+
+.star-icon::before, .star-icon::after{
+    content: '';
+    width: 10%;
+    height: 3px;
+    display: block;
+    background-color: currentColor;
+}
+
+.fa-brands{
+    padding: 0.5rem;
+}
