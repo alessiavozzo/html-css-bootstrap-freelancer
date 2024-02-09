@@ -44,6 +44,7 @@ button.btn.btn-primary{
     background-color: currentColor;
 }
 
+
 .social-icon{
     align-items: center;
     justify-content: center;
@@ -67,18 +68,39 @@ button.btn.btn-primary{
     }
 }
 
+.btn.btn-primary:hover{
+    background-color: var(--fr-dark);
+}
+
+.social-icon:hover{
+    background-color: var(--fr-primary);
+}
+
+
+.star-icon:has(.fa-star:hover){
+
+    &::before{
+        width: 50%;
+    }
+    &::after{
+        width: 50%;
+    }
+}
+
+
 .overlay{
     width: 100%;
     height: 100%;
     background-color:rgba(35, 134, 114, 0.705);
     justify-content: center;
     align-items: center;
+    display: none;
     
     > .fa-plus{
         font-size: 2.5rem;
     }
 }
 
-.image > img{
-   /*  filter: grayscale(100%) sepia(100%) hue-rotate(90deg); */
+.image:hover .overlay{
+    display: flex;
 }
